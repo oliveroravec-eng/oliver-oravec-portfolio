@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#121010">
+  <meta name="description" content="Portfólio Olivera Oravca. Projekty, pracovné skúsenosti a štúdium podnikania na Lýceu C. S. Lewisa v Bratislave.">
+  <meta property="og:title" content="Oliver Oravec · Portfólio">
+  <meta property="og:description" content="Od nápadu po hotový produkt. Projekty, skúsenosti a zručnosti Olivera Oravca.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/commander/home.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Oliver Oravec · Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap">
+  <link rel="stylesheet" href="/styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-out" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
+  <a class="skip" href="#obsah" data-i18n="skip">Preskočiť na obsah</a>
+  <div class="focus" id="focus" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+  <header class="top wrap">
+    <a class="mark" href="#domov" data-focus data-i18n-label="homeLabel" aria-label="Oliver Oravec, úvodná stránka">Oliver Oravec</a>
+    <nav class="nav" data-i18n-label="navLabel" aria-label="Hlavná navigácia">
+      <a href="#projekty" data-focus data-i18n="projects">Projekty</a>
+      <a href="#skusenosti" data-focus data-i18n="experience">Skúsenosti</a>
+      <a href="#zrucnosti" data-focus data-i18n="skills">Zručnosti</a>
+      <a href="#o-mne" data-focus data-i18n="about">O mne</a>
+      <a href="#kontakt" data-focus data-i18n="contact">Kontakt</a>
+    </nav>
+    <div class="tools">
+      <div class="lang" role="group" aria-label="Jazyk / Language">
+        <button type="button" data-lang="sk" aria-pressed="true" lang="sk" data-focus>SK</button>
+        <button type="button" data-lang="en" aria-pressed="false" lang="en" data-focus>EN</button>
+      </div>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-i18n="menu">Menu</button>
+    </div>
+  </header>
+
+  <nav class="menu" id="menu" data-i18n-label="mobileNavLabel" aria-label="Mobilná navigácia" inert>
+    <a href="#projekty" data-i18n="projects">Projekty</a>
+    <a href="#skusenosti" data-i18n="experience">Skúsenosti</a>
+    <a href="#zrucnosti" data-i18n="skills">Zručnosti</a>
+    <a href="#o-mne" data-i18n="about">O mne</a>
+    <a href="#kontakt" data-i18n="contact">Kontakt</a>
+  </nav>
+
+  <main id="obsah" tabindex="-1">
+    <div id="home-view">
+
+      <section class="hero wrap" id="domov" aria-labelledby="hero-title">
+        <h1 id="hero-title">
+          <span class="line"><span><span data-i18n="heroFrom">Od</span> <span id="w-idea" data-i18n="heroIdea">nápadu</span></span></span>
+          <span class="line"><span data-i18n="heroTo">po hotový</span></span>
+          <span class="line"><span class="accent" id="w-product" data-i18n="heroProduct">produkt.</span></span>
+        </h1>
+        <div class="hero-foot fade">
+          <p class="lead"><span data-i18n="intro">Študujem podnikanie na Lýceu C. S. Lewisa v Bratislave.</span> <span data-i18n="aboutApproach">Baví ma marketing a tvorba digitálnych produktov. Obom sa chcem ďalej venovať aj vo vlastnom podnikaní.</span></p>
+          <div class="btns">
+            <a class="btn main" href="#projekty" data-focus data-i18n="viewProjects">Pozrieť projekty</a>
+            <a class="btn" href="#kontakt" data-focus data-i18n="writeEmail">Napísať e-mail</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec wrap" id="projekty" aria-labelledby="projects-title">
+        <h2 id="projects-title"><span data-i18n="projects">Projekty</span> <em>07</em></h2>
+        <div class="work">
+          <ol class="list" id="list"></ol>
+          <div class="stage" aria-hidden="true">
+            <div class="frame" id="frame"></div>
+            <p id="stage-s"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec wrap" id="skusenosti" aria-labelledby="experience-title">
+        <h2 id="experience-title" data-i18n="experience">Skúsenosti</h2>
+        <div class="xp">
+          <article class="rv" data-focus>
+            <h3>Commander Services</h3>
+            <p class="role" data-i18n="commanderRole">Podpora vedenia a HR</p>
+            <div><p data-i18n="commanderExperience">Pri nástupe nových zamestnancov som mapoval úlohy HR, IT a manažérov. Pre internú komunikáciu som navrhol a vyvinul intranet.</p>
+            <p class="links"><a href="#projekt/intranet" data-i18n="intranetTitle">Commander Intranet</a><a href="#projekt/onboarding" data-i18n="onboardingTitle">Commander Onboarding Hub</a></p></div>
+          </article>
+          <article class="rv" data-focus>
+            <h3>Compass Group</h3>
+            <p class="role" data-i18n="internship">Stáž</p>
+            <div><p data-i18n="compassExperience">S tímom sme pripravili videonávod pre samoobslužné práčovne CENT.</p>
+            <p class="links"><a href="#projekt/cent" data-i18n="centTitle">Práčovne CENT</a></p></div>
+          </article>
+          <article class="rv" data-focus>
+            <h3>Filter Multibrand Store</h3>
+            <p class="role" data-i18n="filterRole">Marketing na sociálnych sieťach</p>
+            <div><p data-i18n="filterExperience">Zastrešoval som tvorbu a plánovanie obsahu pre Instagram butiku.</p>
+            <p class="links"><a href="#projekt/filter" data-i18n="filterTitle">Filter Multibrand Store</a></p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="sec wrap" id="zrucnosti" aria-labelledby="skills-title">
+        <h2 id="skills-title" data-i18n="skills">Zručnosti</h2>
+        <h3 class="group" data-i18n="hardSkills">Technické zručnosti</h3>
+        <div class="skills">
+          <div class="skill rv" data-focus><b data-i18n="webDevelopment">Vývoj webu</b><span data-i18n="webDevelopmentDetail">Intranet pre Commander som postavil na SharePointe s Reactom a TypeScriptom.</span></div>
+          <div class="skill rv" data-focus><b data-i18n="analysisAndDesign">Analýza a návrh služieb</b><span data-i18n="analysisAndDesignDetail">Pri onboardingu som porovnal nástroje a navrhol prototyp podľa potrieb HR, IT a manažérov.</span></div>
+          <div class="skill rv" data-focus><b data-i18n="contentProduction">Marketing a tvorba obsahu</b><span data-i18n="contentProductionDetail">Pre Filter som plánoval obsah, pripravoval fotky, videá a texty a vyhodnocoval výsledky.</span></div>
+        </div>
+        <h3 class="group" data-i18n="softSkills">Mäkké zručnosti</h3>
+        <div class="skills">
+          <div class="skill rv" data-focus><b data-i18n="communication">Komunikácia</b><span data-i18n="communicationDetail">Pri zbierke pre OZ Bublina sme darcom vysvetlili, čo ich príspevky pokryjú.</span></div>
+          <div class="skill rv" data-focus><b data-i18n="teamwork">Tímová spolupráca</b><span data-i18n="teamworkDetail">Počas stáže v Compass Group sme v tíme pripravili videonávod, ktorý CENT používa pri práčkach.</span></div>
+          <div class="skill rv" data-focus><b data-i18n="responsibility">Zodpovednosť</b><span data-i18n="responsibilityDetail">Pri intranete som mal na starosti návrh, vývoj, testovanie aj zaškolenie redaktorov.</span></div>
+        </div>
+      </section>
+
+      <section class="sec wrap" id="o-mne" aria-labelledby="about-title">
+        <h2 id="about-title" data-i18n="about">O mne</h2>
+        <div class="about rv">
+          <p data-i18n="aboutIntro">Volám sa Oliver a študujem podnikanie na Lýceu C. S. Lewisa v Bratislave. Odmalička ma zaujíma, čo stojí za podnikmi a ako sa ich filozofia prejavuje v rozhodnutiach.</p>
+          <p data-i18n="aboutApproach">Baví ma marketing a tvorba digitálnych produktov. Obom sa chcem ďalej venovať aj vo vlastnom podnikaní.</p>
+        </div>
+        <p class="motto" id="motto" data-i18n="aboutClosing">Radšej poviem, že ešte nie je hotovo, než odovzdám niečo, za čím si nestojím.</p>
+      </section>
+    </div>
+
+    <article class="detail wrap" id="project-view" hidden aria-labelledby="detail-title">
+      <a href="#projekty" class="back" data-focus><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg><span data-i18n="backToProjects">Späť na projekty</span></a>
+      <header class="detail-head">
+        <p class="detail-n" id="detail-n">01</p>
+        <h1 id="detail-title" tabindex="-1"></h1>
+        <p class="detail-sub" id="detail-summary"></p>
+      </header>
+      <figure class="detail-cover" id="detail-cover-wrap"><img id="detail-cover" alt="" width="2048" height="1106"></figure>
+      <div class="case-study" id="commander-case-study" data-case-project="intranet" hidden>
+        <p class="case-meta" data-i18n="intranetMeta">Reálny projekt vo firme · 2026</p>
+        <section class="case-row">
+          <h2 data-i18n="intranetProblemTitle">Problém</h2>
+          <p data-i18n="intranetProblem">Commander Services má približne 200 zamestnancov vo viacerých divíziách. Starý intranet bol neprehľadný a pridávať obsah mohlo iba HR. Informácie medzi oddeleniami sa preto šírili e-mailom a cez osobné kontakty, často neskoro alebo vôbec. Interný prieskum firmy ukázal, že komunikácia medzi oddeleniami je najslabšia z 11 meraných oblastí.</p>
+        </section>
+        <section class="case-row">
+          <h2 data-i18n="intranetSolutionTitle">Riešenie</h2>
+          <div class="case-copy">
+            <p data-i18n="intranetSolution">Navrhol som a postavil nový intranet ako vlastné rozšírenie SharePointu (SharePoint Framework, React, TypeScript), prepojené s Microsoft 365 a Entra ID.</p>
+            <ul>
+              <li><strong data-i18n="intranetEditorialTitle">Redakcia.</strong> <span data-i18n="intranetEditorial">Každé oddelenie publikuje vlastné články bez čakania na HR. Editor ukazuje článok tak, ako ho uvidia čitatelia, a podporuje fotky, galérie, videá aj prílohy.</span></li>
+              <li><strong data-i18n="intranetDirectoryTitle">Kolegovia a organizačná štruktúra.</strong> <span data-i18n="intranetDirectory">Vyhľadávanie podľa mena, oddelenia alebo témy a matica „kto čo rieši“.</span></li>
+              <li data-i18n="intranetSections">Novinky, eventy, CEO stĺpček, HR zóna, manuály a smernice a administrácia pre správcov.</li>
+              <li data-i18n="intranetBrand">Dizajn podľa brand manuálu Commander a maskotka Commu ako tvár kampane pri spustení.</li>
+            </ul>
+          </div>
+        </section>
+        <figure class="case-media">
+          <img src="/assets/commander/events.png" width="2047" height="1152" loading="lazy" decoding="async" alt="Prehľad najbližších eventov a nových kolegov na intranete Commander." data-alt="intranetEvents">
+          <figcaption data-i18n="intranetEventsCaption">Najbližšie eventy a noví kolegovia na domovskej stránke.</figcaption>
+        </figure>
+        <section class="case-row">
+          <h2 data-i18n="intranetRoleTitle">Čo som robil</h2>
+          <ul>
+            <li data-i18n="intranetRoleBuild">Návrh, dizajn a vývoj celého riešenia od prototypu po balík pripravený na nasadenie.</li>
+            <li data-i18n="intranetRoleTest">Nasadenie a testovanie v prostredí SharePointu vrátane záťažových testov a testov s bežnými používateľmi.</li>
+            <li data-i18n="intranetRoleDocs">Technická dokumentácia architektúry, ukladania dát a rolí pre interné IT a úprava riešenia podľa ich pravidiel vývoja.</li>
+            <li data-i18n="intranetRoleTraining">Školenie redaktorov z oddelení a videonávod „Ako pridať článok“.</li>
+            <li data-i18n="intranetRoleBrand">Firemný dizajnový systém a tvorba videí s maskotkou Commou.</li>
+          </ul>
+        </section>
+        <section class="case-row">
+          <h2 id="commander-tutorial-title" data-i18n="intranetTutorial">Ako pridať článok</h2>
+          <div class="case-copy">
+            <p data-i18n="intranetTutorialIntro">Videonávod pre redaktorov jednotlivých oddelení.</p>
+            <video id="commander-tutorial" class="case-video" controls playsinline preload="metadata" aria-labelledby="commander-tutorial-title" src="/assets/commander/ako-pridat-clanok.mp4"></video>
+          </div>
+        </section>
+        <section class="case-row">
+          <h2>Commu</h2>
+          <div class="case-copy">
+            <p data-i18n="intranetCommu">Maskotka kampane k spusteniu intranetu.</p>
+            <div class="commu-gallery">
+              <img src="/assets/commander/commu-front.jpg" width="890" height="1334" loading="lazy" decoding="async" alt="Commu spredu." data-alt="commuFront">
+              <img src="/assets/commander/commu-angle.jpg" width="890" height="1334" loading="lazy" decoding="async" alt="Commu v trojštvrťovom pohľade." data-alt="commuAngle">
+              <img src="/assets/commander/commu-side.jpg" width="890" height="1334" loading="lazy" decoding="async" alt="Commu zboku." data-alt="commuSide">
+              <img src="/assets/commander/commu-back.jpg" width="890" height="1334" loading="lazy" decoding="async" alt="Commu zozadu." data-alt="commuBack">
+              <img class="commu-portrait" src="/assets/commander/commu-smile.jpg" width="886" height="638" loading="lazy" decoding="async" alt="Portrét usmiatej Commu." data-alt="commuSmile">
+              <img class="commu-portrait" src="/assets/commander/commu-neutral.jpg" width="888" height="638" loading="lazy" decoding="async" alt="Portrét Commu s neutrálnym výrazom." data-alt="commuNeutral">
+            </div>
+          </div>
+        </section>
+        <section class="case-row">
+          <h2 data-i18n="intranetResultTitle">Výsledok</h2>
+          <p data-i18n="intranetResult">Funkčný intranet pripravený na nasadenie pre celú firmu. Publikovať budú vyškolení redaktori z jednotlivých oddelení.</p>
+        </section>
+        <section class="case-row">
+          <h2 data-i18n="intranetTech">Technológie</h2>
+          <ul class="case-tech">
+            <li>SharePoint Framework</li><li>React</li><li>TypeScript</li><li>Tailwind CSS</li>
+            <li>Microsoft Graph</li><li>Entra ID</li><li>PnPjs</li><li>GitHub</li>
+          </ul>
+        </section>
+      </div>
+      <div class="case-study" id="onboarding-case-study" data-case-project="onboarding" hidden>
+        <p class="case-meta" data-i18n="onboardingMeta">Commander Services · 2026</p>
+        <section class="case-row">
+          <h2 data-i18n="onboardingProcessTitle">Analýza procesu</h2>
+          <p data-i18n="onboardingProcess">V Commander Services som zmapoval celý proces nástupu zamestnanca, od prijatia pracovnej ponuky až po koniec skúšobnej doby. Určil som, kto má jednotlivé kroky na starosti, kde sa údaje prepisujú ručne a ktoré úlohy sa dajú automatizovať.</p>
+        </section>
+        <section class="case-row">
+          <h2 data-i18n="onboardingDesignTitle">Od návrhu k prototypu</h2>
+          <p data-i18n="onboardingDesign">Porovnal som Sloneek a Personio a preveril, ako by Power Automate mohol prenášať údaje medzi existujúcimi systémami vrátane Vemy. Zistenia som spracoval do interného návrhu a prezentácie. Potom som navrhol rozhranie vlastnej aplikácie a s tímom sme ho dotiahli do funkčného online prototypu.</p>
+        </section>
+        <section class="case-row">
+          <h2 data-i18n="onboardingDemoTitle">Čo ukazuje demo</h2>
+          <div class="case-copy">
+            <p data-i18n="onboardingDemo">Demo ukazuje, ako môžu HR, IT a manažéri na jednom mieste sledovať nástupy, úlohy a termíny či pracovať s dokumentmi a šablónami. Nový zamestnanec má vlastný prehľad krokov, ktoré ho pri nástupe čakajú.</p>
+            <a class="text-link case-action" href="https://commander-onboard.vercel.app/app/ulohy" target="_blank" rel="noopener noreferrer"><span data-i18n="onboardingOpenDemo">Otvoriť online prototyp</span><svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a>
+          </div>
+        </section>
+      </div>
+      <div class="case-study" id="bookmatch-case-study" data-case-project="bookmatch" hidden>
+        <p class="case-meta" data-i18n="bookmatchMeta">Service Design · Lýceum × Martinus · 2026</p>
+        <section class="case-row">
+          <h2 data-i18n="bookmatchProblemTitle">Kde sa výber zasekol</h2>
+          <p data-i18n="bookmatchProblem">V rozhovoroch, dotazníku a pri pozorovaní v predajni sme zistili, že mladí ľudia často chcú čítať, ale nevedia, kde začať. Ak nepoznajú konkrétny titul ani žáner, množstvo možností im výber sťažuje.</p>
+        </section>
+        <section class="case-row">
+          <h2 data-i18n="bookmatchPrototypeTitle">Čo sme navrhli</h2>
+          <div class="case-copy">
+            <p data-i18n="bookmatchPrototype">V Lovable sme vytvorili prototyp kvízu, ktorý sa pýta na náladu, záujmy a to, čo chce človek pri čítaní zažiť. Výsledkom je čitateľský typ a tri odporúčané knihy. Pri každej kvíz vysvetlí, prečo by mohla sadnúť.</p>
+            <a class="text-link case-action" href="https://knizny-match-maker.lovable.app/" target="_blank" rel="noopener noreferrer"><span data-i18n="bookmatchOpenDemo">Vyskúšať prototyp BooksMatch</span><svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a>
+          </div>
+        </section>
+        <section class="case-row bookmatch-screens" aria-labelledby="bookmatch-screens-title">
+          <h2 id="bookmatch-screens-title" data-i18n="bookmatchScreensTitle">Obrazovky prototypu</h2>
+          <div class="bookmatch-screen-grid">
+            <figure class="case-media">
+              <img src="/assets/booksmatch/quiz.jpg" width="704" height="704" loading="lazy" decoding="async" alt="Prvá otázka kvízu o tom, aký deň má čitateľ za sebou, s vyplnenou ukážkovou odpoveďou." data-alt="bookmatchQuiz">
+              <figcaption data-i18n="bookmatchQuizCaption">Otázka v kvíze s ukážkovou odpoveďou.</figcaption>
+            </figure>
+            <figure class="case-media">
+              <img src="/assets/booksmatch/result.jpg" width="1040" height="1120" loading="lazy" decoding="async" alt="Výsledok BooksMatch s typom Pokojný čitateľ a tromi odporúčanými knihami s vysvetlením." data-alt="bookmatchResult">
+              <figcaption data-i18n="bookmatchResultCaption">Čitateľský typ a tri odporúčané knihy po dokončení kvízu.</figcaption>
+            </figure>
+          </div>
+        </section>
+        <section class="case-row">
+          <h2 data-i18n="bookmatchTestingTitle">Čo zmenilo testovanie</h2>
+          <p data-i18n="bookmatchTesting">Pri skúšaní so spolužiakmi najlepšie fungovali otázky o nálade a bežnom živote. Upravili sme preto otázky a k odporúčaniam pridali krátke zdôvodnenie.</p>
+        </section>
+      </div>
+      <div class="case-study" id="jobino-case-study" data-case-project="jobino" hidden>
+        <p class="case-meta" data-i18n="jobinoMeta">SPARX · Lýceum C. S. Lewisa</p>
+        <section class="case-row">
+          <h2 data-i18n="jobinoProblemTitle">Komu by pomohlo</h2>
+          <p data-i18n="jobinoProblem">S Davidom Dobrikom sme v programe SPARX rozpracovali platformu pre ľudí, ktorí potrebujú rýchlu výpomoc v okolí, a pre študentov či ďalších ľudí, ktorí si chcú privyrobiť bez pevného rozvrhu. V pitchi sme vychádzali z viac než 30 rozhovorov.</p>
+        </section>
+        <section class="case-row">
+          <h2 data-i18n="jobinoConceptTitle">Ako by fungovalo</h2>
+          <div class="case-copy">
+            <p data-i18n="jobinoConcept">Zadávateľ by pridal úlohu, miesto, čas a odmenu. Pomocníka by si vybral podľa profilu, hodnotení a dostupnosti. Odmena by sa uvoľnila po potvrdení, že úloha je hotová.</p>
+          </div>
+        </section>
+        <figure class="case-media">
+          <img src="/assets/jobino/pitch-concept.jpg" width="1440" height="809" loading="lazy" decoding="async" alt="Slajd Jobino znázorňujúci zadanie úlohy, výber pomocníka a platbu po potvrdení." data-alt="jobinoConceptSlide">
+          <figcaption data-i18n="jobinoSlideCaption">Návrh rozhrania z pôvodného pitch decku.</figcaption>
+        </figure>
+        <section class="case-row">
+          <h2 data-i18n="jobinoPitchTitle">Od nápadu po pitch</h2>
+          <p data-i18n="jobinoPitch">Nápad sme dotiahli k verejnému pitchu. Navrhli sme príjem z 15 % provízie za dokončenú úlohu a pripravili plán pilotu pre Bratislavu, Košice a Žilinu.</p>
+        </section>
+      </div>
+      <div class="case-study" id="bublina-case-study" data-case-project="bublina" hidden>
+        <p class="case-meta bublina-meta" data-i18n="bublinaMeta">Tímový projekt Lýcea C. S. Lewisa · 2025</p>
+        <dl class="campaign-stats">
+          <div><dt data-i18n="bublinaRaised">Vyzbierané</dt><dd data-i18n="bublinaAmount">1 636 €</dd></div>
+          <div><dt data-i18n="bublinaTarget">Z pôvodného cieľa 900 €</dt><dd>182 %</dd></div>
+          <div><dt data-i18n="bublinaSupporters">Podporovatelia</dt><dd>65</dd></div>
+        </dl>
+        <section class="case-row">
+          <h2 data-i18n="bublinaGoalTitle">Cieľ kampane</h2>
+          <div class="case-copy">
+            <p data-i18n="bublinaGoal">S tímom z Lýcea C. S. Lewisa sme na StartLabe pripravili zbierku pre OZ Bublina. Pôvodný cieľ 900 € mal pokryť prenájom lodí a vybavenia na trojdňový splav na Malom Dunaji. Po jeho dosiahnutí sme pridali cieľ 1 350 €, aby kampaň pomohla aj s prenocovaním v kempe.</p>
+            <a class="text-link campaign-link" href="https://www.startlab.sk/projekty/4202-pomozte-zrealizovat-splav-pre-deti-z-centier-pre-deti-a-rod/" target="_blank" rel="noopener noreferrer"><span data-i18n="bublinaStartLab">Kampaň na StartLabe</span><svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a>
+          </div>
+        </section>
+        <section class="case-row">
+          <h2 data-i18n="bublinaRoleTitle">Moja úloha</h2>
+          <div class="case-copy">
+            <p data-i18n="bublinaRole">Zodpovedal som za vizuálnu identitu a komunikačnú stratégiu kampane. Pri komunikácii sme stavali na konkrétnom cieli a ukázali, čo jednotlivé príspevky pomôžu zaplatiť.</p>
+            <a class="text-link campaign-link" href="https://www.youtube.com/watch?v=izHXRsexU0M" target="_blank" rel="noopener noreferrer"><span data-i18n="bublinaVideo">Pozrieť video kampane na YouTube</span><svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a>
+          </div>
+        </section>
+        <section class="case-row">
+          <h2 data-i18n="bublinaResultTitle">Výsledok</h2>
+          <div class="case-copy">
+            <p data-i18n="bublinaResult">Kampaň prekročila oba ciele. OZ Bublina uskutočnilo splav na Malom Dunaji od 20. do 22. júna 2025. Podľa vyúčtovania sa na víkende zúčastnilo 56 detí a dobrovoľníkov OZ Bublina spolu so šiestimi ďalšími pomocníkmi.</p>
+            <figure class="case-media campaign-photo">
+              <img src="/assets/bublina/splav.jpg" width="600" height="400" loading="lazy" decoding="async" alt="Spoločná fotografia účastníkov pri kanoe." data-alt="bublinaTrip">
+              <figcaption data-i18n="bublinaPhotoCaption">Fotografia zo splavu zverejnená vo vyúčtovaní kampane na StartLabe.</figcaption>
+            </figure>
+          </div>
+        </section>
+      </div>
+      <div class="case-study" id="filter-case-study" data-case-project="filter" hidden>
+        <p class="case-meta" data-i18n="filterMeta">Instagram · 21. mája až 12. júla 2025</p>
+        <section class="case-row">
+          <h2 data-i18n="filterRoleTitle">Moja úloha</h2>
+          <div class="case-copy">
+            <p data-i18n="filterRoleDescription">Zastrešoval som vizuálne smerovanie, tvorbu fotografií a videí, texty, plánovanie obsahu aj vyhodnocovanie výsledkov.</p>
+            <p data-i18n="filterContent">V karuseloch som spracoval príbehy značiek C.P. Company, Brunello Cucinelli a Gran Sasso. Butik som predstavil samostatným príspevkom. Letnú ponuku som ukázal na produktových fotkách tenisiek Hogan a v krátkych videách s teniskami Premiata.</p>
+          </div>
+        </section>
+        <section class="case-row filter-showcase">
+          <h2 data-i18n="filterShowcase">Vybrané príspevky</h2>
+          <div class="filter-gallery">
+            <a class="filter-preview" href="https://www.instagram.com/filter_multibrand_bratislava/p/DKJ_WbMowJU/" target="_blank" rel="noopener noreferrer">
+              <img src="/assets/filter/cp-company.jpg" width="1440" height="1800" loading="lazy" decoding="async" alt="">
+              <span data-i18n="filterPost3">Príbeh C.P. Company</span>
+            </a>
+            <a class="filter-preview" href="https://www.instagram.com/filter_multibrand_bratislava/p/DJ6Vqvhoy6F/" target="_blank" rel="noopener noreferrer">
+              <img src="/assets/filter/zielinski-rozen.jpg" width="1440" height="1800" loading="lazy" decoding="async" alt="">
+              <span data-i18n="filterPost1">Zielinski &amp; Rozen v butiku</span>
+            </a>
+            <a class="filter-preview" href="https://www.instagram.com/filter_multibrand_bratislava/p/DLpDKtHICua/" target="_blank" rel="noopener noreferrer">
+              <img src="/assets/filter/cucinelli.jpg" width="1440" height="1801" loading="lazy" decoding="async" alt="">
+              <span data-i18n="filterPost13">Príbeh Brunella Cucinelliho</span>
+            </a>
+            <a class="filter-preview" href="https://www.instagram.com/filter_multibrand_bratislava/p/DLRzh_FI93H/" target="_blank" rel="noopener noreferrer">
+              <img src="/assets/filter/hogan.jpg" width="1440" height="1802" loading="lazy" decoding="async" alt="">
+              <span data-i18n="filterPost10">Dámske tenisky Hogan</span>
+            </a>
+            <a class="filter-preview" href="https://www.instagram.com/filter_multibrand_bratislava/p/DL16G49owA0/" target="_blank" rel="noopener noreferrer">
+              <img src="/assets/filter/damsky-vypredaj.jpg" width="1440" height="1800" loading="lazy" decoding="async" alt="">
+              <span data-i18n="filterPost15">Dámsky letný výpredaj</span>
+            </a>
+          </div>
+        </section>
+        <section class="case-row filter-showcase" id="filter-reels" aria-labelledby="filter-reels-title">
+          <h2 id="filter-reels-title">Reels</h2>
+          <div class="filter-reels-grid">
+            <figure class="filter-reel">
+              <video src="/assets/filter/reels/detail-kolekcii.mp4" poster="/assets/filter/reels/detail-kolekcii.jpg" width="540" height="960" controls playsinline preload="none" aria-labelledby="filter-reel-title-2"></video>
+              <figcaption><a href="https://www.instagram.com/filter_multibrand_bratislava/reel/DJ_hKgYoNFE/" target="_blank" rel="noopener noreferrer"><span id="filter-reel-title-2" data-i18n="filterPost2">Detaily kolekcií Jacob Cohën, Hogan a C.P. Company</span><svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a></figcaption>
+            </figure>
+            <figure class="filter-reel">
+              <video src="/assets/filter/reels/filter-19-jun.mp4" poster="/assets/filter/reels/filter-19-jun.jpg" width="540" height="960" controls playsinline preload="none" aria-labelledby="filter-reel-title-7"></video>
+              <figcaption><a href="https://www.instagram.com/filter_multibrand_bratislava/reel/DLFUZCsIxEh/" target="_blank" rel="noopener noreferrer"><span id="filter-reel-title-7" data-i18n="filterPost7">Rozbaľovanie a skúšanie tenisiek</span><svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a></figcaption>
+            </figure>
+            <figure class="filter-reel">
+              <video src="/assets/filter/reels/posledne-pary-premiata.mp4" poster="/assets/filter/reels/posledne-pary-premiata.jpg" width="540" height="960" controls playsinline preload="none" aria-labelledby="filter-reel-title-16"></video>
+              <figcaption><a href="https://www.instagram.com/filter_multibrand_bratislava/reel/DL7Cm-0o3LO/" target="_blank" rel="noopener noreferrer"><span id="filter-reel-title-16" data-i18n="filterPost16">Posledné páry Premiata</span><svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a></figcaption>
+            </figure>
+            <figure class="filter-reel">
+              <video src="/assets/filter/reels/vypredaj-premiata.mp4" poster="/assets/filter/reels/vypredaj-premiata.jpg" width="720" height="1280" controls playsinline preload="none" aria-labelledby="filter-reel-title-17"></video>
+              <figcaption><a href="https://www.instagram.com/filter_multibrand_bratislava/reel/DMASG0sojjw/" target="_blank" rel="noopener noreferrer"><span id="filter-reel-title-17" data-i18n="filterPost17">Výpredaj tenisiek Premiata</span><svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a></figcaption>
+            </figure>
+          </div>
+        </section>
+        <details class="filter-archive">
+          <summary data-i18n="filterArchive">Všetkých 17 príspevkov na Instagrame</summary>
+          <ol>
+            <li><a href="https://www.instagram.com/filter_multibrand_bratislava/p/DJ6Vqvhoy6F/" target="_blank" rel="noopener noreferrer"><time datetime="2025-05-21">21. 5.</time><span data-i18n="filterPost1">Zielinski &amp; Rozen v butiku</span><span class="filter-format" data-i18n="filterCarousel">Karusel</span><svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a></li>
+            <li><a href="https://www.instagram.com/filter_multibrand_bratislava/reel/DJ_hKgYoNFE/" target="_blank" rel="noopener noreferrer"><time datetime="2025-05-23">23. 5.</time><span data-i18n="filterPost2">Detaily kolekcií Jacob Cohën, Hogan a C.P. Company</span><span class="filter-format" data-i18n="filterReel">Reel</span><svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a></li>
+            <li><a href="https://www.instagram.com/filter_multibrand_bratislava/p/DKJ_WbMowJU/" target="_blank" rel="noopener noreferrer"><time datetime="2025-05-27">27. 5.</time><span data-i18n="filterPost3">Príbeh C.P. Company</span><span class="filter-format" data-i18n="filterCarousel">Karusel</span><svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a></li>
+            <li><a href="https://www.instagram.com/filter_multibrand_bratislava/p/DKjocRGouNG/" target="_blank" rel="noopener noreferrer"><time datetime="2025-06-06">6. 6.</time><span data-i18n="filterPost4">Gran Sasso jar/leto 2025</span><span class="filter-format" data-i18n="filterCarousel">Karusel</span><svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a></li>
+            <li><a href="https://www.instagram.com/filter_multibrand_bratislava/p/DKpA6M-oEI5/" target="_blank" rel="noopener noreferrer"><time datetime="2025-06-08">8. 6.</time><span data-i18n="filterPost5">Dondup denim</span><span class="filter-format" data-i18n="filterCarousel">Karusel</span><svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a></li>
+            <li><a href="https://www.instagram.com/filter_multibrand_bratislava/p/DK_0Ujroj5d/" target="_blank" rel="noopener noreferrer"><time datetime="2025-06-17">17. 6.</time><span data-i18n="filterPost6">Predstavenie butiku Filter</span><span class="filter-format" data-i18n="filterCarousel">Karusel</span><svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a></li>
+            <li><a href="https://www.instagram.com/filter_multibrand_bratislava/reel/DLFUZCsIxEh/" target="_blank" rel="noopener noreferrer"><time datetime="2025-06-19">19. 6.</time><span data-i18n="filterPost7">Rozbaľovanie a skúšanie tenisiek</span><span class="filter-format" data-i18n="filterReel">Reel</span><svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a></li>
+            <li><a href="https://www.instagram.com/filter_multibrand_bratislava/p/DLMs7IPIVLD/" target="_blank" rel="noopener noreferrer"><time datetime="2025-06-22">22. 6.</time><span data-i18n="filterPost8">Letné vône Zielinski &amp; Rozen</span><span class="filter-format" data-i18n="filterCarousel">Karusel</span><svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a></li>
+            <li><a href="https://www.instagram.com/filter_multibrand_bratislava/p/DLRzI0Jo3RL/" target="_blank" rel="noopener noreferrer"><time datetime="2025-06-24">24. 6.</time><span data-i18n="filterPost9">Tenisky Hogan</span><span class="filter-format" data-i18n="filterPhoto">Fotopost</span><svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a></li>
+            <li><a href="https://www.instagram.com/filter_multibrand_bratislava/p/DLRzh_FI93H/" target="_blank" rel="noopener noreferrer"><time datetime="2025-06-24">24. 6.</time><span data-i18n="filterPost10">Dámske tenisky Hogan</span><span class="filter-format" data-i18n="filterPhoto">Fotopost</span><svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a></li>
+            <li><a href="https://www.instagram.com/filter_multibrand_bratislava/p/DLW_q4FIxne/" target="_blank" rel="noopener noreferrer"><time datetime="2025-06-26">26. 6.</time><span data-i18n="filterPost11">Tenisky Premiata</span><span class="filter-format" data-i18n="filterPhoto">Fotopost</span><svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a></li>
+            <li><a href="https://www.instagram.com/filter_multibrand_bratislava/p/DLhfvAFIbr7/" target="_blank" rel="noopener noreferrer"><time datetime="2025-06-30">30. 6.</time><span data-i18n="filterPost12">Batoh Barba Napoli</span><span class="filter-format" data-i18n="filterCarousel">Karusel</span><svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a></li>
+            <li><a href="https://www.instagram.com/filter_multibrand_bratislava/p/DLpDKtHICua/" target="_blank" rel="noopener noreferrer"><time datetime="2025-07-03">3. 7.</time><span data-i18n="filterPost13">Príbeh Brunella Cucinelliho</span><span class="filter-format" data-i18n="filterCarousel">Karusel</span><svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a></li>
+            <li><a href="https://www.instagram.com/filter_multibrand_bratislava/p/DLuY1WoI1iS/" target="_blank" rel="noopener noreferrer"><time datetime="2025-07-05">5. 7.</time><span data-i18n="filterPost14">Rodinný príbeh Gran Sasso</span><span class="filter-format" data-i18n="filterCarousel">Karusel</span><svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a></li>
+            <li><a href="https://www.instagram.com/filter_multibrand_bratislava/p/DL16G49owA0/" target="_blank" rel="noopener noreferrer"><time datetime="2025-07-08">8. 7.</time><span data-i18n="filterPost15">Dámsky letný výpredaj</span><span class="filter-format" data-i18n="filterCarousel">Karusel</span><svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a></li>
+            <li><a href="https://www.instagram.com/filter_multibrand_bratislava/reel/DL7Cm-0o3LO/" target="_blank" rel="noopener noreferrer"><time datetime="2025-07-10">10. 7.</time><span data-i18n="filterPost16">Posledné páry Premiata</span><span class="filter-format" data-i18n="filterReel">Reel</span><svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a></li>
+            <li><a href="https://www.instagram.com/filter_multibrand_bratislava/reel/DMASG0sojjw/" target="_blank" rel="noopener noreferrer"><time datetime="2025-07-12">12. 7.</time><span data-i18n="filterPost17">Výpredaj tenisiek Premiata</span><span class="filter-format" data-i18n="filterReel">Reel</span><svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a></li>
+          </ol>
+        </details>
+      </div>
+      <div class="case-study" id="cent-case-study" data-case-project="cent" hidden>
+        <div class="cent-layout">
+          <div class="cent-copy">
+            <p class="case-meta" data-i18n="centMeta">Stáž v Compass Group</p>
+            <section>
+              <h2 data-i18n="centWorkTitle">Videonávod</h2>
+              <p data-i18n="centWork">Počas stáže v Compass Group sme pre práčovne CENT natočili krátky návod. Ukazuje, ako zaplatiť kartou, zvoliť prací program a použiť práčku aj sušičku.</p>
+            </section>
+            <section>
+              <h2 data-i18n="centUseTitle">Priamo pri práčke</h2>
+              <p data-i18n="centUse">CENT sprístupnilo video cez QR kódy na práčkach, takže si zákazníci môžu postup pozrieť priamo pri stroji. Sieť má prevádzky v Bratislave, Nitre, Galante a Trnave.</p>
+              <a class="text-link case-action" href="https://cent.sk/nase-pracovne/" target="_blank" rel="noopener noreferrer"><span data-i18n="centLocations">Zoznam práčovní CENT</span><svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a>
+            </section>
+          </div>
+          <figure class="cent-video">
+            <video src="/assets/cent/navod-pranie-susenie.mp4" poster="/assets/cent/navod-pranie-susenie.jpg" width="540" height="960" controls playsinline preload="none" aria-labelledby="cent-video-caption"></video>
+            <figcaption id="cent-video-caption" data-i18n="centVideo">Ako prať a sušiť v práčovni CENT</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <a class="next" id="next-project" href="#projekt/onboarding" data-focus>
+        <span class="next-label" data-i18n="nextProject">Ďalší projekt</span>
+        <span class="next-title" id="next-project-title"></span>
+        <span class="next-img"><img id="next-img" alt=""></span>
+      </a>
+    </article>
+  </main>
+
+  <footer class="contact wrap" id="kontakt" aria-labelledby="contact-title">
+    <h2 id="contact-title" class="sr-only" data-i18n="contact">Kontakt</h2>
+    <p class="ask" data-i18n="contactAsk">Máte projekt, ponuku alebo otázku?</p>
+    <a class="mail" id="email-link" href="mailto:olivera25@gmail.com" data-focus>olivera25@gmail.com</a>
+    <p class="contact-links"><a id="linkedin-link" href="https://www.linkedin.com/" hidden rel="noopener noreferrer" target="_blank" data-focus>LinkedIn <svg class="ico" aria-hidden="true"><use href="#i-out"/></svg></a></p>
+    <div class="foot"><span>Oliver Oravec © 2026</span><span>Bratislava</span><a href="#domov" data-focus data-i18n="backToTop">Späť hore</a></div>
+  </footer>
+  <p class="sr-only" role="status" id="page-status" aria-live="polite"></p>
+  <script src="/app.js"></script>
+</body>
+</html>
